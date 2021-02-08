@@ -17,3 +17,5 @@ C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\
 C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.FrmPrincipal.resources
 C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.frmEstado.resources
 C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.frmEstados.resources
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.FrmCargo.resources
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.FrmCargos.resources

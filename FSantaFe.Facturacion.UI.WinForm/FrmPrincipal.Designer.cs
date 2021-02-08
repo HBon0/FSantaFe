@@ -67,7 +67,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             // cerrarSesiónToolStripMenuItem
             // 
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
@@ -115,6 +115,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnCargos.Text = "Cargos";
             this.btnCargos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCargos.UseVisualStyleBackColor = true;
+            this.btnCargos.Click += new System.EventHandler(this.btnCargos_Click);
             // 
             // btnEstados
             // 

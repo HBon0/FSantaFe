@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargo.Designer.cs">
+      <DependentUpon>FrmCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargos.Designer.cs">
+      <DependentUpon>FrmCargos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEstado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCargo.resx">
+      <DependentUpon>FrmCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargos.resx">
+      <DependentUpon>FrmCargos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEstado.resx">
       <DependentUpon>FrmEstado.cs</DependentUpon>
     </EmbeddedResource>

@@ -33,5 +33,12 @@ namespace FSantaFe.Facturacion.UI.WinForm
             frmEstados.StartPosition = FormStartPosition.CenterScreen;
             frmEstados.ShowDialog();
         }
+
+        private void btnCargos_Click(object sender, EventArgs e)
+        {
+            FrmCargos frmCargos = new FrmCargos();
+            frmCargos.StartPosition = FormStartPosition.CenterScreen;
+            frmCargos.ShowDialog();
+        }
     }
 }
