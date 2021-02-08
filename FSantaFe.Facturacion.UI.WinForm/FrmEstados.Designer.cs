@@ -62,6 +62,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnModificar.TabIndex = 2;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -72,7 +73,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // frmEstados
+            // FrmEstados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -81,8 +82,9 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvEstados);
-            this.Name = "frmEstados";
+            this.Name = "FrmEstados";
             this.Text = "Listado de Estados";
+            this.Load += new System.EventHandler(this.FrmEstados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstados)).EndInit();
             this.ResumeLayout(false);
 

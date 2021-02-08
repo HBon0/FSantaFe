@@ -13,7 +13,7 @@ namespace FSantaFe.Facturacion.AccesoADatos
         //Metodo para Guardar Registros.
         public static int Guardar(Estado pEstado)
         {
-            String consulta = @"INSERT INTO Estado( Nombre) VALUES (@Nombre)";
+            String consulta = "INSERT INTO Estado( Nombre) VALUES (@Nombre)";
             SqlCommand comando = ComunDB.Obtenercomando();
             comando.CommandText = consulta;
             comando.Parameters.AddWithValue("@Nombre",pEstado.Nombre);
@@ -23,18 +23,18 @@ namespace FSantaFe.Facturacion.AccesoADatos
         //Metodo que nos sirve para Modificar un registro.
         public static int Modificar(Estado pEstado)
         {
-            string consulta = @"UPDATE Estado SET Nombre = @Nombre where Id = @Id";
+            string consulta = "UPDATE Estado SET Nombre = @Nombre where Id = @Id";
             SqlCommand comando = ComunDB.Obtenercomando();
             comando.CommandText = consulta;
-            comando.Parameters.AddWithValue("@Nombre", pEstado.Nombre);
             comando.Parameters.AddWithValue("@Id", pEstado.Id);
+            comando.Parameters.AddWithValue("@Nombre", pEstado.Nombre);
             return ComunDB.EjecutarComando(comando);
         }
 
         //Metodo que sirve para Eliminar un registro.
         public static int Eliminar(Estado pEstado)
         {
-            string consulta = @"DELETE FROM Estado WHERE Id = @Id";
+            string consulta = "DELETE FROM Estado WHERE Id = @Id";
             SqlCommand comando = ComunDB.Obtenercomando();
             comando.CommandText = consulta;
             comando.Parameters.AddWithValue("@Id", pEstado.Id);
@@ -44,7 +44,7 @@ namespace FSantaFe.Facturacion.AccesoADatos
         //Metodo padra Listar y leer los 500 primeros registros.
         public static List<Estado> ObtenerTodos()
         {
-            string consulta = @"SELECT TOP 500 e.Nombre FROM Estado e";
+            string consulta = "SELECT TOP 500 e.Id, e.Nombre FROM Estado e";
             SqlCommand comando = ComunDB.Obtenercomando();
             comando.CommandText = consulta;
             SqlDataReader reader = ComunDB.EjecutarComandoReader(comando);
@@ -63,7 +63,7 @@ namespace FSantaFe.Facturacion.AccesoADatos
         //Metodo para Busscar un registro mediante Id. 
         public static Estado BuscarPorId(byte pId)
         {
-            string consulta = "SELECT e.Id, e.Nombre FROM Estado e WHERE Id = @pId ";
+            string consulta = "SELECT e.Id, e.Nombre FROM Estado e WHERE Id = @Id ";
             SqlCommand comando = ComunDB.Obtenercomando();
             comando.CommandText = consulta;
             comando.Parameters.AddWithValue("@Id", pId);

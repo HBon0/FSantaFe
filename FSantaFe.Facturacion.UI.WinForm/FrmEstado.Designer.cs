@@ -58,6 +58,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnGuardar.TabIndex = 2;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmEstado
             // 
@@ -69,6 +70,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.Controls.Add(this.txtNombreEstado);
             this.Name = "FrmEstado";
             this.Text = "Datos de Estado";
+            this.Load += new System.EventHandler(this.FrmEstado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
