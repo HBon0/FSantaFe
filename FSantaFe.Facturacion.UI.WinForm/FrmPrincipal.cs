@@ -16,5 +16,22 @@ namespace FSantaFe.Facturacion.UI.WinForm
         {
             InitializeComponent();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnEstados_Click(object sender, EventArgs e)
+        {
+            FrmEstados frmEstados = new FrmEstados();
+            frmEstados.StartPosition = FormStartPosition.CenterScreen;
+            frmEstados.ShowDialog();
+        }
     }
 }

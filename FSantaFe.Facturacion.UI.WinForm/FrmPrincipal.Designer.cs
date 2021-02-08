@@ -29,13 +29,20 @@ namespace FSantaFe.Facturacion.UI.WinForm
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDelDesarrolladorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCargos = new System.Windows.Forms.Button();
+            this.btnEstados = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -45,7 +52,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(836, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(822, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,6 +69,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
             this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -84,18 +92,69 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.acercaDelDesarrolladorToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.acercaDelDesarrolladorToolStripMenuItem.Text = "Acerca del Desarrollador";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.btnCargos);
+            this.panel1.Controls.Add(this.btnEstados);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 431);
+            this.panel1.TabIndex = 1;
+            // 
+            // btnCargos
+            // 
+            this.btnCargos.Image = ((System.Drawing.Image)(resources.GetObject("btnCargos.Image")));
+            this.btnCargos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargos.Location = new System.Drawing.Point(22, 225);
+            this.btnCargos.Name = "btnCargos";
+            this.btnCargos.Size = new System.Drawing.Size(150, 37);
+            this.btnCargos.TabIndex = 2;
+            this.btnCargos.Text = "Cargos";
+            this.btnCargos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCargos.UseVisualStyleBackColor = true;
+            // 
+            // btnEstados
+            // 
+            this.btnEstados.Image = ((System.Drawing.Image)(resources.GetObject("btnEstados.Image")));
+            this.btnEstados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstados.Location = new System.Drawing.Point(22, 179);
+            this.btnEstados.Name = "btnEstados";
+            this.btnEstados.Size = new System.Drawing.Size(150, 40);
+            this.btnEstados.TabIndex = 1;
+            this.btnEstados.Text = "Estados";
+            this.btnEstados.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEstados.UseVisualStyleBackColor = true;
+            this.btnEstados.Click += new System.EventHandler(this.btnEstados_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::FSantaFe.Facturacion.UI.WinForm.Properties.Resources.img1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 477);
+            this.ClientSize = new System.Drawing.Size(822, 455);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.Text = "Ferreteria Santa Fe";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,5 +168,9 @@ namespace FSantaFe.Facturacion.UI.WinForm
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDelDesarrolladorToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnCargos;
+        private System.Windows.Forms.Button btnEstados;
     }
 }
