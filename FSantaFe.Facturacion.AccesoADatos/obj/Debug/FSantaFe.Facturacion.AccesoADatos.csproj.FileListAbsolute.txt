@@ -1,0 +1,9 @@
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\bin\Debug\FSantaFe.Facturacion.AccesoADatos.dll
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\bin\Debug\FSantaFe.Facturacion.AccesoADatos.pdb
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\bin\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.dll
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\bin\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.pdb
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\obj\Debug\FSantaFe.Facturacion.AccesoADatos.csprojAssemblyReference.cache
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\obj\Debug\FSantaFe.Facturacion.AccesoADatos.csproj.CoreCompileInputs.cache
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\obj\Debug\FSantaFe.Facturacion.AccesoADatos.csproj.CopyComplete
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\obj\Debug\FSantaFe.Facturacion.AccesoADatos.dll
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.AccesoADatos\obj\Debug\FSantaFe.Facturacion.AccesoADatos.pdb

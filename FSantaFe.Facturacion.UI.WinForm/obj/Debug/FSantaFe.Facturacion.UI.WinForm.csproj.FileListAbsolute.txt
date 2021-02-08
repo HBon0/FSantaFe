@@ -1,0 +1,17 @@
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.UI.WinForm.exe.config
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.UI.WinForm.exe
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.UI.WinForm.pdb
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.dll
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.LogicaDeNegocio.dll
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.AccesoADatos.dll
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.pdb
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.LogicaDeNegocio.pdb
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\bin\Debug\FSantaFe.Facturacion.AccesoADatos.pdb
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.csprojAssemblyReference.cache
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.Properties.Resources.resources
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.csproj.GenerateResource.cache
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.csproj.CoreCompileInputs.cache
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.csproj.CopyComplete
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.exe
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.pdb
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.UI.WinForm\obj\Debug\FSantaFe.Facturacion.UI.WinForm.FrmPrincipal.resources

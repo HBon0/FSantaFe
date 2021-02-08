@@ -1,0 +1,6 @@
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.EntidadesDeNegocio\bin\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.dll
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.EntidadesDeNegocio\bin\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.pdb
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.EntidadesDeNegocio\obj\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.csprojAssemblyReference.cache
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.EntidadesDeNegocio\obj\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.csproj.CoreCompileInputs.cache
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.EntidadesDeNegocio\obj\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.dll
+C:\Users\hecto\OneDrive\Escritorio\FSantaFe\FSantaFe.Facturacion.EntidadesDeNegocio\obj\Debug\FSantaFe.Facturacion.EntidadesDeNegocio.pdb
