@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+using FSantaFe.Facturacion.EntidadesDeNegocio;
 using FSantaFe.Facturacion.LogicaDeNegocio;
 using FSantaFe.Facturacion.UI.WinForm.Utilidades;
 
@@ -51,5 +53,29 @@ namespace FSantaFe.Facturacion.UI.WinForm
                 MessageBox.Show("Debe seleccionar un registro para modificar");
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            byte id = (byte)UFormulario.ObtenerIdGrid(dgvEstados);
+            if (id > 0)
+            {
+                if (MessageBox.Show("Desea eliminar el registro", "Eliminar", 
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+                {
+                    if (EstadoBL.Eliminar(new Estado { Id = id}) > 0)
+                    {
+                        MessageBox.Show("Registro eliminado");
+                        MostrarEstados();
+                    }
+                }
+            } 
+            else
+            {
+                MessageBox.Show("Debe seleccionar un registro");
+            }
+        }
+
+
+
     }
 }

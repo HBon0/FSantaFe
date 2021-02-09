@@ -44,6 +44,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnGuardar.TabIndex = 5;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label1
             // 
@@ -90,6 +91,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.Controls.Add(this.txtNombreCargo);
             this.Name = "FrmCargo";
             this.Text = "Datos de Cargo";
+            this.Load += new System.EventHandler(this.FrmCargo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

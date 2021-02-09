@@ -44,10 +44,12 @@ namespace FSantaFe.Facturacion.AccesoADatos
             return ComunDB.EjecutarComando(comando);
         }
 
+        
+
         //Metodo para listar los registros.
         public static List<Cargo> ObtenerTodos()
         {
-            string consulta = @"SELECT TOP 500 c.IdEstado, c.Nombre FROM Cargo e";
+            string consulta = @"SELECT TOP 500 c.Id, c.IdEstado, c.Nombre FROM Cargo c";
             SqlCommand comando = ComunDB.Obtenercomando();
             comando.CommandText = consulta;
             SqlDataReader reader = ComunDB.EjecutarComandoReader(comando);

@@ -32,13 +32,13 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.dgvEstados = new System.Windows.Forms.DataGridView();
+            this.dgvCargos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreCargo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cboEstados = new System.Windows.Forms.ComboBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEstados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCargos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEliminar
@@ -49,6 +49,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -58,6 +59,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnNuevo
             // 
@@ -69,13 +71,13 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // dgvEstados
+            // dgvCargos
             // 
-            this.dgvEstados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEstados.Location = new System.Drawing.Point(12, 77);
-            this.dgvEstados.Name = "dgvEstados";
-            this.dgvEstados.Size = new System.Drawing.Size(430, 173);
-            this.dgvEstados.TabIndex = 4;
+            this.dgvCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCargos.Location = new System.Drawing.Point(12, 77);
+            this.dgvCargos.Name = "dgvCargos";
+            this.dgvCargos.Size = new System.Drawing.Size(430, 173);
+            this.dgvCargos.TabIndex = 4;
             // 
             // label1
             // 
@@ -118,6 +120,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // FrmCargos
             // 
@@ -132,10 +135,11 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.dgvEstados);
+            this.Controls.Add(this.dgvCargos);
             this.Name = "FrmCargos";
             this.Text = "Listado de Cargos";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEstados)).EndInit();
+            this.Load += new System.EventHandler(this.FrmCargos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCargos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,7 +150,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.DataGridView dgvEstados;
+        private System.Windows.Forms.DataGridView dgvCargos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombreCargo;
         private System.Windows.Forms.Label label2;
