@@ -13,19 +13,18 @@ using FSantaFe.Facturacion.LogicaDeNegocio;
 
 namespace FSantaFe.Facturacion.UI.WinForm
 {
-    public partial class FrmCargo : Form
+    public partial class FrmTipoMaterial : Form
     {
+        TipoMaterial Material = new TipoMaterial();
+        public byte _IdMaterial = 0;
 
-        Cargo cargo = new Cargo();
-        public byte _idCargo = 0;
 
-        public FrmCargo()
+        public FrmTipoMaterial()
         {
             InitializeComponent();
         }
 
-        //Mostrar los Registros en el DataGridView
-        private void FrmCargo_Load(object sender, EventArgs e)
+        private void FrmTipoMaterial_Load(object sender, EventArgs e)
         {
             cboEstados.DataSource = EstadoBL.ObtenerTodos();
             cboEstados.DisplayMember = "Nombre";
@@ -34,22 +33,20 @@ namespace FSantaFe.Facturacion.UI.WinForm
             cboEstados.SelectedItem = null;
             cboEstados.SelectedText = "SELECCIONAR";
 
-            if (_idCargo > 0)
+            if (_IdMaterial > 0)
             {
                 cargarDatos();
             }
         }
-        
 
-        //Metodo para cargar datos meiante busqueda de Id
         private void cargarDatos()
         {
 
-            cargo = CargoBL.BuscarPorId(_idCargo);
-            if (cargo.Id > 0)
+            Material = TipoMaterialBL.BuscarPorId(_IdMaterial);
+            if (Material.Id > 0)
             {
-                txtNombreCargo.Text = cargo.Nombre;
-                cboEstados.SelectedValue = cargo.IdEstado;
+                txtNombreTipoMaterial.Text = Material.Nombre;
+                cboEstados.SelectedValue = Material.IdEstado;
 
             }
             else
@@ -60,13 +57,11 @@ namespace FSantaFe.Facturacion.UI.WinForm
 
         }
 
-
-        //Metodo para validar datos del form y no hayan datos vacios
         private bool validarDatosFormulario()
         {
             bool validar = false;
 
-            if (txtNombreCargo.Text.Trim().Equals(""))
+            if (txtNombreTipoMaterial.Text.Trim().Equals(""))
             {
                 MessageBox.Show("Nombre Estado, es obligatorio");
                 validar = true;
@@ -83,19 +78,17 @@ namespace FSantaFe.Facturacion.UI.WinForm
             return validar;
         }
 
-
-        //Metodo para Guardar.
         private void Guardar()
         {
             try
             {
                 if (!validarDatosFormulario())
                 {
-                    cargo.Nombre = txtNombreCargo.Text;
-                    cargo.IdEstado = (byte)cboEstados.SelectedValue;
-                    if (_idCargo <= 0)
+                    Material.Nombre = txtNombreTipoMaterial.Text;
+                    Material.IdEstado = (byte)cboEstados.SelectedValue;
+                    if (_IdMaterial <= 0)
                     {
-                        if (CargoBL.Guardar(cargo) > 0)
+                        if (TipoMaterialBL.Guardar(Material) > 0)
                         {
                             MessageBox.Show("Registro exitoso");
                             this.Close();
@@ -103,7 +96,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
                     }
                     else
                     {
-                        if (CargoBL.Modificar(cargo) > 0)
+                        if (TipoMaterialBL.Modificar(Material) > 0)
                         {
                             MessageBox.Show("Registro exitoso");
                             this.Close();
@@ -117,7 +110,6 @@ namespace FSantaFe.Facturacion.UI.WinForm
                 MessageBox.Show("Ocurrio un error al intentar guardar");
             }
         }
-
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {

@@ -40,5 +40,12 @@ namespace FSantaFe.Facturacion.UI.WinForm
             frmCargos.StartPosition = FormStartPosition.CenterScreen;
             frmCargos.ShowDialog();
         }
+
+        private void btnMateriales_Click(object sender, EventArgs e)
+        {
+            FrmTipoMateriales frmMateriales = new FrmTipoMateriales();
+            frmMateriales.StartPosition = FormStartPosition.CenterScreen;
+            frmMateriales.ShowDialog();
+        }
     }
 }

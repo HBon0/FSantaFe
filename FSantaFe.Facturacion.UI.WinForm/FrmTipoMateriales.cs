@@ -14,50 +14,46 @@ using FSantaFe.Facturacion.UI.WinForm.Utilidades;
 
 namespace FSantaFe.Facturacion.UI.WinForm
 {
-    public partial class FrmCargos : Form
+    public partial class FrmTipoMateriales : Form
     {
-        public FrmCargos()
+        public FrmTipoMateriales()
         {
             InitializeComponent();
         }
 
-        //Mostrar el Form para Guardadar/Modificar un registro.
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            FrmCargo frmCargo = new FrmCargo();
-            frmCargo.StartPosition = FormStartPosition.CenterScreen;
-            frmCargo.ShowDialog();
-            MostrarCargos();
-        }
-
-        //Metodo para Mostrar los Estados en el ComboBox 
-        private void FrmCargos_Load(object sender, EventArgs e)
+        private void FrmTipoMateriales_Load(object sender, EventArgs e)
         {
             var listaEstados = EstadoBL.ObtenerTodos();
             listaEstados.Insert(0, new Estado() { Id = 0, Nombre = "SELECCIONAR" });
             cboEstados.DataSource = listaEstados;
             cboEstados.DisplayMember = "Nombre";
             cboEstados.ValueMember = "Id";
-            MostrarCargos();
+            MostrarTipoMateriales();
         }
 
-        //Mostrar los registros en el DataGriedView
-        private void MostrarCargos()
+        private void MostrarTipoMateriales()
         {
-            dgvCargos.DataSource = CargoBL.ObtenerTodos();
+            dgvMateriales.DataSource = TipoMaterialBL.ObtenerTodos();
         }
 
-        //Metodo para Modificar un registro.
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            FrmTipoMaterial frmTipoMaterial = new FrmTipoMaterial();
+            frmTipoMaterial.StartPosition = FormStartPosition.CenterScreen;
+            frmTipoMaterial.ShowDialog();
+            MostrarTipoMateriales();
+        }
+
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            byte id = (byte)UFormulario.ObtenerIdGrid(dgvCargos);
+            byte id = (byte)UFormulario.ObtenerIdGrid(dgvMateriales);
             if (id > 0)
             {
-                FrmCargo frmCargo = new FrmCargo();
-                frmCargo.StartPosition = FormStartPosition.CenterScreen;
-                frmCargo._idCargo = id;
-                frmCargo.ShowDialog();
-                MostrarCargos();
+                FrmTipoMaterial frmTipoMaterial = new FrmTipoMaterial();
+                frmTipoMaterial.StartPosition = FormStartPosition.CenterScreen;
+                frmTipoMaterial._IdMaterial = id;
+                frmTipoMaterial.ShowDialog();
+                MostrarTipoMateriales();
             }
             else
             {
@@ -65,20 +61,18 @@ namespace FSantaFe.Facturacion.UI.WinForm
             }
         }
 
-
-        //Meteodo para eliminar
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            byte id = (byte)UFormulario.ObtenerIdGrid(dgvCargos);
+            byte id = (byte)UFormulario.ObtenerIdGrid(dgvMateriales);
             if (id > 0)
             {
                 if (MessageBox.Show("Desea eliminar el registro", "Eliminar",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
                 {
-                    if (CargoBL.Eliminar(new Cargo { Id = id }) > 0)
+                    if (TipoMaterialBL.Eliminar(new TipoMaterial { Id = id }) > 0)
                     {
                         MessageBox.Show("Registro eliminado");
-                        MostrarCargos();
+                        MostrarTipoMateriales();
                     }
                 }
             }
@@ -88,17 +82,15 @@ namespace FSantaFe.Facturacion.UI.WinForm
             }
         }
 
-
-        //Metodo para Buscar un Registro mediante coincidencias
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Cargo cargo = new Cargo
+            TipoMaterial Material = new TipoMaterial
             {
-                Nombre = txtNombreCargo.Text,
+                Nombre = txtNombreMaterial.Text,
                 IdEstado = (byte)cboEstados.SelectedValue
             };
 
-            dgvCargos.DataSource = CargoBL.Buscar(cargo);
+            dgvMateriales.DataSource = TipoMaterialBL.Buscar(Material);
         }
     }
 }

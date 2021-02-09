@@ -76,6 +76,18 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTipoMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoMaterial.Designer.cs">
+      <DependentUpon>FrmTipoMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoMateriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoMateriales.Designer.cs">
+      <DependentUpon>FrmTipoMateriales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\UFormulario.cs" />
@@ -93,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoMaterial.resx">
+      <DependentUpon>FrmTipoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoMateriales.resx">
+      <DependentUpon>FrmTipoMateriales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

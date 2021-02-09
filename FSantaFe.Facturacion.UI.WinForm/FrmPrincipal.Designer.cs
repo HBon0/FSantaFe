@@ -40,6 +40,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.btnCargos = new System.Windows.Forms.Button();
             this.btnEstados = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMateriales = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,6 +96,7 @@ namespace FSantaFe.Facturacion.UI.WinForm
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.btnMateriales);
             this.panel1.Controls.Add(this.btnCargos);
             this.panel1.Controls.Add(this.btnEstados);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -140,6 +142,16 @@ namespace FSantaFe.Facturacion.UI.WinForm
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnMateriales
+            // 
+            this.btnMateriales.Location = new System.Drawing.Point(22, 268);
+            this.btnMateriales.Name = "btnMateriales";
+            this.btnMateriales.Size = new System.Drawing.Size(150, 37);
+            this.btnMateriales.TabIndex = 3;
+            this.btnMateriales.Text = "Materiales";
+            this.btnMateriales.UseVisualStyleBackColor = true;
+            this.btnMateriales.Click += new System.EventHandler(this.btnMateriales_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,5 +185,6 @@ namespace FSantaFe.Facturacion.UI.WinForm
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCargos;
         private System.Windows.Forms.Button btnEstados;
+        private System.Windows.Forms.Button btnMateriales;
     }
 }
